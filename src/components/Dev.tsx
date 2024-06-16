@@ -18,7 +18,7 @@ const Dev = () => {
                 </tr>
                 <tr>
                     <td>Development date:</td>
-                    <td>June 15, 2024</td>                    
+                    <td>June 16, 2024</td>                    
                 </tr>
                 <tr>
                     <td>Script Purpose:</td>

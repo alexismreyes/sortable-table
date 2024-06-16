@@ -1,3 +1,7 @@
+/* - Developer: Marlon Alexis Manzano Reyes
+- Development date: June 16, 2024
+- Script Purpose: Create a react component which allows user to sort the content of one table based in a chosen property  */
+
 import {
   Person,
   rockyObj,
