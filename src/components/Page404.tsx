@@ -1,5 +1,12 @@
-const Page404 = () =>{
-    return <h1>PAGINA NO ENCONTRADA</h1>
-}
+import notfound from "../assets/notfound.jpg"
+import "../assets/Page404.css"
 
-export default Page404
+const Page404 = () => {
+  return (
+    <div className="logo-notfound">
+      <img src={notfound} className="logo-img-notfound"/>
+    </div>
+  );
+};
+
+export default Page404;

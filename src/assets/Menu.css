@@ -1,0 +1,14 @@
+  .nav-item .nav-link {
+    color: black;
+  }
+  .nav-item:hover .nav-link {
+    color: white; 
+  }
+
+  li{
+    border-radius: 0.2rem;
+  }
+
+  .gold-header{
+    background-color: #e2ba55;
+  }

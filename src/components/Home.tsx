@@ -1,5 +1,15 @@
+import logo from "../assets/perseus-logo.png"
+import "../assets/Home.css"
+
+//Just a home page
 const Home = () =>{
-    return <h1>Soy Home</h1>
+    return (
+        <div className="logo">
+            <img src={logo} className="logo-img" />    
+        </div>
+        
+    )
+    
 }
 
 export default Home

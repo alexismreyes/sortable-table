@@ -1,0 +1,47 @@
+/* Common styles for both tables */
+.table-container {
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.table-container table {
+    width: 100%; 
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+}
+
+.table-container thead {
+    height: 60px;
+    background-color: #1C2E7A;
+    color: #ffffff;
+
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.712);
+    
+}
+
+.table-container tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.table-container tbody tr {
+    height: 50px;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: rgb(114, 113, 113);
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.table-container tbody tr:hover {
+    color: #555555;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

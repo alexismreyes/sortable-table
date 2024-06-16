@@ -1,0 +1,20 @@
+.table-container-sort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .table-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .select-container {
+    width: 50%;
+  }
+
+  .sortable-label{
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: rgb(114, 113, 113);
+  }

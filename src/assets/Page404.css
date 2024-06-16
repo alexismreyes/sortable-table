@@ -1,0 +1,10 @@
+.logo-notfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img-notfound{
+    width: 40%;
+
+}

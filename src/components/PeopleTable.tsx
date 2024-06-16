@@ -1,22 +1,28 @@
-import { Person } from "../solution/solution";
+import { Person } from "../solution/People";
+import "../assets/PeopleTable.css"
+import "../assets/Common.css"
 
 interface Props{
-    people: Person[];
+    people: Person[];    
+    handleSort: (key: keyof Person) => void;
 }
 
-const PeopleTable: React.FC<Props> = ({people}) => {
+const PeopleTable: React.FC<Props> = ({people, handleSort}) => { 
+
+  //Renders the table based in the sortedPeople array from the parent component  
   return (
     <>
-    <table>
+    <div>
+    <table className="table-container people-table">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Favorite food</th>
-          <th>Favorite Movie</th>
-          <th>Status</th>
+          <th onClick={() => handleSort("Name")} >NAME</th>
+          <th onClick={() => handleSort("Favorite Food")}>FAVORITE FOOD</th>
+          <th onClick={() => handleSort("Favorite Movie")}>FAVORITE MOVIE</th>
+          <th onClick={() => handleSort("Status")}>STATUS</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody>        
         {people.map((personObj, index) => (
           <tr key={index}>            
             <td>{personObj.Name}</td>
@@ -27,6 +33,7 @@ const PeopleTable: React.FC<Props> = ({people}) => {
         ))}
       </tbody>
     </table>
+    </div>
     </>
   );
 };
