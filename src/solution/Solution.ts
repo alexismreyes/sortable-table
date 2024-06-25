@@ -47,8 +47,15 @@ export function sortByProp(peopleArr: Person[], prop: keyof Person): Person[] {
   const arrCopy = [...peopleArr]; //to work over a copy of the original array
 
   return arrCopy.sort((a, b) => {
-    if (a[prop] < b[prop]) return -1;
-    if (a[prop] > b[prop]) return 1;
+    const propA = a[prop];
+    const propB = b[prop];
+
+    if (propA === undefined || propB === undefined) {
+      return 0; 
+    }
+
+    if (propA < propB) return -1;
+    if (propA > propB) return 1;
     return 0;
   });
 }

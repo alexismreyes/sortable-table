@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import {
   peopleArray,  
   personKeys,
@@ -35,8 +35,8 @@ const Sortable = () => {
 
   //sets the selected key based on user selection in select list
   //sets initially sort order as ASC
-  const sendKey = (e) => {
-    setSelectedKey(e.target.value);
+  const sendKey = (e: ChangeEvent<HTMLSelectElement>) => {
+    setSelectedKey(e.target.value as keyof Person);
     setSortOrder("asc");
   }; 
 
